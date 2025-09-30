@@ -1,0 +1,5 @@
+// Site web : ninasingla.fr
+// Portfolio réalisé dans le cadre de mon BTS SIO - SLAM : 1e année
+// Services Informatiques aux Organisations - Solutions Logicielles et Applications Métiers
+// Auteur : Nina Singla
+
