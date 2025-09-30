@@ -7,32 +7,64 @@
 <html lang="fr">
     <head>
         <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="Portfolio de Nina Singla, étudiante en informatique spécialisée dans le développement d'applications.">
         <link rel="stylesheet" href="style.css"> 
         <script src="script.js" defer></script>
-        <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css">
-        <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/uicons-brands/css/uicons-brands.css">
-        <title>Nina Singla</title>
+        <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/2.6.0/uicons-regular-rounded/css/uicons-regular-rounded.css">
+        <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/2.6.0/uicons-brands/css/uicons-brands.css">
+        <title>Nina Singla - Portfolio</title>
     </head>
 
     <body>
 <!-- MENU -->    
         <nav id="menu">
             <ul>
-                <li><a href="#about">Mon profil</a></li>
-                <li><a href="#formation">Ma formation</a></li>
-                <li><a href="#competences">Mes compétences</a></li>
-                <li><a href="#portfolio">Mon portfolio</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li>
+                    <a href="#header">
+                        <i class="fi fi-rr-home"></i>
+                        <span>Accueil</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#about">
+                        <i class="fi fi-rr-user"></i>
+                        <span>Mon profil</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#formation">
+                        <i class="fi fi-rr-graduation-cap"></i>
+                        <span>Ma formation</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#competences">
+                        <i class="fi fi-rr-star"></i>
+                        <span>Mes compétences</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#portfolio">
+                        <i class="fi fi-rr-briefcase"></i>
+                        <span>Mon portfolio</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#contact">
+                        <i class="fi fi-rr-at"></i>
+                        <span>Contact</span>
+                    </a>
+                </li>
             </ul>
         </nav>
 
 
 <!-- TITRES DU SITE -->
-        <header class="header">
-            <h1>Développement d'applications</h1>
-            <h2>Étudiante en informatique</h2>
-            <h3>Nina Singla</h3>
+        <header class="header" id="header">
+                <h1>Développement d'applications</h1>
+                <h2>Étudiante en informatique</h2>
+                <h3>Nina Singla</h3>
         </header>
 
 
@@ -43,9 +75,9 @@
             <section id="about">
                 <div class="container">
                     <h2 class="titre-section">À propos</h2>
-                    <img src="" alt="ma photo de profil">
+                    <img src="images/profil.jpg" alt="ma photo de profil">
                     <p class="description">
-                        J’ai découvert sur le tard, en autodidacte, ma passion pour le code, l’électronique, l’automatisation, les systèmes embarqués, la domotique et la puissance de l’informatique en général. Ma récente reconversion dans ce domaine est largement compensée par ma soif d’apprendre à créer des solutions utiles et innovantes. J’aborde chaque projet comme une occasion de transformer ma passion en expertise. Grâce à ma reprise d’études en BTS SIO – SLAM, qui me permettra d’acquérir des bases techniques solides, j’aspire à évoluer vers le métier de développeuse.
+                        J'ai découvert sur le tard, en autodidacte, ma passion pour le code, l'électronique, l'automatisation, les systèmes embarqués, la domotique et la puissance de l'informatique en général. Ma récente reconversion dans ce domaine est largement compensée par ma soif d'apprendre à créer des solutions utiles et innovantes. J'aborde chaque projet comme une occasion de transformer ma passion en expertise. Grâce à ma reprise d'études en BTS SIO – SLAM, qui me permettra d'acquérir des bases techniques solides, j'aspire à évoluer vers le métier de développeuse.
                     </p>
                 </div>
             </section>
@@ -54,34 +86,69 @@
             <section id="formation">
                 <div class="container">
                     <h2 class="titre-section">Ma formation</h2>
-                    <h3 class="titre-formation"> BTS SIO - SLAM
+                    <h3 class="titre-formation">BTS SIO - SLAM
                         <span>Services Informatiques aux Organisations - Solutions Logicielles et Applications Métiers</span>
                     </h3>
+                    
+                    <div class="formation-cards">
 <!-- support -->
-                    <h4>Support et mise à disposition de services informatiques</h4>
-                    <ul>
-                        <li>Gérer le patrimoine informatique</li>
-                        <li>Répondre aux incidents et aux demandes d'assistance et d'évolution</li>
-                        <li>Développer la présence en ligne de l'organisation</li>
-                        <li>Travailler en mode projet</li>
-                        <li>Mettre à disposition des utilisateurs un service informatique</li>
-                        <li>Veille informationnelle</li>
-                    </ul>
+                        <div class="formation-card">
+                            <div class="card-face face1">
+                                <div class="content">
+                                    <h4>Support et mise à disposition de services informatiques</h4>
+                                </div>
+                            </div>
+                            <div class="card-face face2">
+                                <div class="content">
+                                    <ul>
+                                        <li>Gérer le patrimoine informatique</li>
+                                        <li>Répondre aux incidents et aux demandes d'assistance et d'évolution</li>
+                                        <li>Développer la présence en ligne de l'organisation</li>
+                                        <li>Travailler en mode projet</li>
+                                        <li>Mettre à disposition des utilisateurs un service informatique</li>
+                                        <li>Veille informationnelle</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
 <!-- cyber -->
-                    <h4>Cybersécurité</h4>
-                    <ul>
-                        <li>Protéger les données à caractère personnel</li>
-                        <li>Préserver l'identité numérique de l'organisation</li>
-                        <li>Sécuriser les équipements et les usages des utilisateurs</li>
-                        <li>Garantir la disponibilité, l'intégrité et la confidentialité des services informatiques et des données de l'organisation face à des cyberattaques</li>
-                    </ul>
+                        <div class="formation-card">
+                            <div class="card-face face1">
+                                <div class="content">
+                                    <h4>Cybersécurité</h4>
+                                </div>
+                            </div>
+                            <div class="card-face face2">
+                                <div class="content">
+                                    <ul>
+                                        <li>Protéger les données à caractère personnel</li>
+                                        <li>Préserver l'identité numérique de l'organisation</li>
+                                        <li>Sécuriser les équipements et les usages des utilisateurs</li>
+                                        <li>Garantir la disponibilité, l'intégrité et la confidentialité des services informatiques et des données de l'organisation face à des cyberattaques</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
 <!-- dev -->
-                    <h4>Conception et développement d'applications</h4>
-                    <ul>
-                        <li>Concevoir et développer une solution applicative</li>
-                        <li>Assurer la maintenance corrective ou évolutive d'une solution applicative</li>
-                        <li>Gérer les données</li>
-                    </ul>
+                        <div class="formation-card">
+                            <div class="card-face face1">
+                                <div class="content">
+                                    <h4>Conception et développement d'applications</h4>
+                                </div>
+                            </div>
+                            <div class="card-face face2">
+                                <div class="content">
+                                    <ul>
+                                        <li>Concevoir et développer une solution applicative</li>
+                                        <li>Assurer la maintenance corrective ou évolutive d'une solution applicative</li>
+                                        <li>Gérer les données</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </section>
 
@@ -95,42 +162,127 @@
 <!-- langages -->
                         <li>
                             <h3>Langages</h3>
-                            <span class="skill">HTML</span>
-                            <span class="skill">CSS</span>
-                            <span class="skill">JavaScript - NetBeans</span>
-                            <span class="skill">Java - Eclipse</span>
-                            <span class="skill">Python - Pycharm</span>
-                            <span class="skill">PHP</span>
-                            <span class="skill">C# - Visual Studio</span>
+                            <div class="skill">
+                                <span class="skill-name">HTML</span>
+                                <div class="progress-bar">
+                                    <div class="progress" style="width: 85%;">85%</div>
+                                </div>
+                            </div>
+                            <div class="skill">
+                                <span class="skill-name">CSS</span>
+                                <div class="progress-bar">
+                                    <div class="progress" style="width: 80%;">80%</div>
+                                </div>
+                            </div>
+                            <div class="skill">
+                                <span class="skill-name">JavaScript - NetBeans</span>
+                                <div class="progress-bar">
+                                    <div class="progress" style="width: 70%;">70%</div>
+                                </div>
+                            </div>
+                            <div class="skill">
+                                <span class="skill-name">Java - Eclipse</span>
+                                <div class="progress-bar">
+                                    <div class="progress" style="width: 75%;">75%</div>
+                                </div>
+                            </div>
+                            <div class="skill">
+                                <span class="skill-name">Python - Pycharm</span>
+                                <div class="progress-bar">
+                                    <div class="progress" style="width: 65%;">65%</div>
+                                </div>
+                            </div>
+                            <div class="skill">
+                                <span class="skill-name">PHP</span>
+                                <div class="progress-bar">
+                                    <div class="progress" style="width: 60%;">60%</div>
+                                </div>
+                            </div>
+                            <div class="skill">
+                                <span class="skill-name">C# - Visual Studio</span>
+                                <div class="progress-bar">
+                                    <div class="progress" style="width: 55%;">55%</div>
+                                </div>
+                            </div>
                         </li>
 <!-- sgbd -->
                         <li>
                             <h3>SGBD</h3>
-                            <span class="skill">MySQL</span>
-                            <span class="skill">PostgreSQL</span>
-                            <span class="skill">MongoDB</span>
+                            <div class="skill">
+                                <span class="skill-name">MySQL</span>
+                                <div class="progress-bar">
+                                    <div class="progress" style="width: 75%;">75%</div>
+                                </div>
+                            </div>
+                            <div class="skill">
+                                <span class="skill-name">PostgreSQL</span>
+                                <div class="progress-bar">
+                                    <div class="progress" style="width: 65%;">65%</div>
+                                </div>
+                            </div>
+                            <div class="skill">
+                                <span class="skill-name">MongoDB</span>
+                                <div class="progress-bar">
+                                    <div class="progress" style="width: 60%;">60%</div>
+                                </div>
+                            </div>
                         </li>
 <!-- Qualité logicielle -->
                         <li>
                             <h3>Qualité logicielle</h3>
-                            <span class="skill">Normes : KISS - DRY - SOLID</span>
-                            <span class="skill">Tests : Unitaires - Fonctionnels</span>
-                            <span class="skill">Analyse de code : SonarLint</span>
+                            <div class="skill">
+                                <span class="skill-name">Normes : KISS - DRY - SOLID</span>
+                                <div class="progress-bar">
+                                    <div class="progress" style="width: 70%;">70%</div>
+                                </div>
+                            </div>
+                            <div class="skill">
+                                <span class="skill-name">Tests : Unitaires - Fonctionnels</span>
+                                <div class="progress-bar">
+                                    <div class="progress" style="width: 65%;">65%</div>
+                                </div>
+                            </div>
+                            <div class="skill">
+                                <span class="skill-name">Analyse de code : SonarLint</span>
+                                <div class="progress-bar">
+                                    <div class="progress" style="width: 60%;">60%</div>
+                                </div>
+                            </div>
                         </li>
                         <li>
                             <h3>Méthode de conception</h3>
-                            <span class="skill">Merise/2</span>
-                            <span class="skill">UML</span>
+                            <div class="skill">
+                                <span class="skill-name">Merise/2</span>
+                                <div class="progress-bar">
+                                    <div class="progress" style="width: 70%;">70%</div>
+                                </div>
+                            </div>
+                            <div class="skill">
+                                <span class="skill-name">UML</span>
+                                <div class="progress-bar">
+                                    <div class="progress" style="width: 75%;">75%</div>
+                                </div>
+                            </div>
                         </li>
 <!-- travail collaboratif -->
                         <li>
                             <h3>Travail collaboratif</h3>
-                            <span class="skill">GitHub : Push, Pull request, ...</span>
+                            <div class="skill">
+                                <span class="skill-name">GitHub : Push, Pull request, ...</span>
+                                <div class="progress-bar">
+                                    <div class="progress" style="width: 80%;">80%</div>
+                                </div>
+                            </div>
                         </li>
 <!-- cms -->
                         <li>
                             <h3>CMS</h3>
-                            <span class="skill">WordPress</span>
+                            <div class="skill">
+                                <span class="skill-name">WordPress</span>
+                                <div class="progress-bar">
+                                    <div class="progress" style="width: 70%;">70%</div>
+                                </div>
+                            </div>
                         </li>
                     </ul>
                 </div>
@@ -142,7 +294,7 @@
                     <h2 class="titre-section">Portfolio</h2>
 <!-- Projet 1 -->
                     <article class="portfolio-item">
-                        <img src="" alt="" class="portfolio-img">
+                        <img src="images/projet1.jpg" alt="Projet 1" class="portfolio-img">
                         <h3 class="portfolio-title">Nom du projet 1</h3>
                         <p class="portfolio-description">
                             Petite description du projet, son objectif et les technologies utilisées.
@@ -153,7 +305,7 @@
                     </article>
 <!-- Projet 2 -->       
                     <article class="portfolio-item">
-                        <img src="" alt="" class="portfolio-img">
+                        <img src="images/projet2.jpg" alt="Projet 2" class="portfolio-img">
                         <h3 class="portfolio-title">Nom du projet 2</h3>
                         <p class="portfolio-description">
                             Petite description du projet, son objectif et les technologies utilisées.
@@ -164,7 +316,7 @@
                     </article>
 <!-- Projet 3 -->
                     <article class="portfolio-item">
-                        <img src="" alt="" class="portfolio-img">
+                        <img src="images/projet3.jpg" alt="Projet 3" class="portfolio-img">
                         <h3 class="portfolio-title">Nom du projet 3</h3>
                         <p class="portfolio-description">
                             Petite description du projet, son objectif et les technologies utilisées.
@@ -230,27 +382,11 @@
 
         </main>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <footer>
-        <p>
-            &copy; 2025 Nina Singla - Tous droits réservés - <a href="attributions.html">Attributions</a>
-        </p>
-    </footer>
+        <footer>
+            <p>
+                &copy; 2025 Nina Singla - Tous droits réservés - <a href="attributions.html">Attributions</a>
+            </p>
+        </footer>
     
-</body>
+    </body>
 </html>
