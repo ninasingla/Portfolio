@@ -3,3 +3,50 @@ Portfolio réalisé dans le cadre de mon BTS SIO - SLAM : 1e année
 Services Informatiques aux Organisations - Solutions Logicielles et Applications Métiers
 Auteur : Nina Singla */
 
+/* --- FONT ------------------------------ */
+
+@font-face {
+    font-family: "SUSEMono";
+    src: url(font/SUSEMono-VariableFont_wght.ttf) format(truetype);
+    font-weight: 100 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "SUSEMono";
+    src: url(font/SUSEMono-Italic-VariableFont_wght.ttf) format(truetype);
+    font-weight: 100 900;
+    font-style: italic;
+    font-display: swap;
+}
+
+
+
+/* --- BODY ------------------------------ */
+
+* {
+    text-decoration: none;
+    list-style: none;
+    font-family: "SUSEMono";
+}
+
+
+/* --- NAV ------------------------------ */
+
+
+
+/* --- HEADER ------------------------------ */
+
+.header {
+    display: flex;
+    flex-direction: column;
+}
+
+.header h1 {
+    order: 2;
+}
+
+.header h2 {
+    order : 1;
+}
