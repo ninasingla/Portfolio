@@ -29,12 +29,13 @@ Auteur : Nina Singla */
     text-decoration: none;
     list-style: none;
     font-family: "SUSEMono";
+    margin: 10px;
 }
 
 
 /* --- NAV ------------------------------ */
 
-
+#menu
 
 /* --- HEADER ------------------------------ */
 
@@ -50,3 +51,15 @@ Auteur : Nina Singla */
 .header h2 {
     order : 1;
 }
+
+
+/* --- MAIN ------------------------------ */
+
+.container {
+
+}
+
+.titre-section {
+
+}
+
