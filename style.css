@@ -46,6 +46,13 @@ html {
     scroll-behavior: smooth;
 }
 
+
+/* ATTRIBUTIONS */
+.link-credits {
+    text-decoration: none;
+    color: #00ffc8;
+}
+
 /* --- NAV ------------------------------ */
 
 #menu {
