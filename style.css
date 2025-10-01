@@ -736,8 +736,10 @@ main {
 /* support */
 .formation-card {
     position: relative;
-    width: 320px;
+    width: 450px;
     cursor: pointer;
+    margin-top: -100px;
+    margin-bottom: -70px;
 }
 
 .formation-card .card-face {
