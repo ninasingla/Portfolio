@@ -356,11 +356,11 @@ main {
 }
 
 .timeline-section-title.top {
-    margin-bottom: 50px;
+    margin-bottom: -50px;
 }
 
 .timeline-section-title.bottom {
-    margin-top: 50px;
+    margin-top: -150px;
     margin-bottom: 0;
 }
 
