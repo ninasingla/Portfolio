@@ -897,34 +897,6 @@ main {
     color: #00ffc8;
 }
 
-#competences > .container > ul > li:nth-child(1) h3::before {
-    content: '\f1d4'; /* fi-rr-code */
-}
-
-/* sgbd */
-#competences > .container > ul > li:nth-child(2) h3::before {
-    content: '\f11e'; /* fi-rr-database */
-}
-
-/* Qualité logicielle */
-#competences > .container > ul > li:nth-child(3) h3::before {
-    content: '\f4cb'; /* fi-rr-check-circle */
-}
-
-#competences > .container > ul > li:nth-child(4) h3::before {
-    content: '\f312'; /* fi-rr-chart-network */
-}
-
-/* travail collaboratif */
-#competences > .container > ul > li:nth-child(5) h3::before {
-    content: '\f5c5'; /* fi-rr-users */
-}
-
-/* cms */
-#competences > .container > ul > li:nth-child(6) h3::before {
-    content: '\f681'; /* fi-rr-browser */
-}
-
 .skill {
     margin-bottom: 20px;
 }
