@@ -224,6 +224,7 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-bottom: 100px;
 }
 
 #about img {
@@ -261,6 +262,7 @@ main {
     font-size: 1.1em;
     transition: all 0.3s ease;
     box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
+    margin-top: 50px;
 }
 
 .cv-button:hover {
@@ -272,6 +274,7 @@ main {
 .cv-button i {
     font-size: 1.3em;
 }
+
 
 /* --- TIMELINE CV ------------------------------ */
 
@@ -566,20 +569,43 @@ main {
     z-index: 1000;
 }
 
-/* Encadré Baccalauréat - décalé vers la droite */
+.strong-xp {
+    color: #00d4aa;
+}
+
+/* Encadré Baccalauréat */
 .timeline-item:nth-child(2) .timeline-description {
     margin-left: 110px;
     min-width: 170px;
     max-width: 1000px;
 }
 
-/* Encadré Secourisme - décalé vers la droite */
+/* Encadré Serveuse */
+.timeline-item:nth-child(3) .timeline-description {
+    margin-left: 300px;
+    min-width: 250px;
+    max-width: 1000px;
+}
+
+/* Encadré Secourisme */
 .timeline-item:nth-child(4) .timeline-description {
     margin-left: 400px;
     min-width: 510px;
     max-width: 1000px;
 }
 
+.sigles-CD31 {
+    font-style: italic;
+}
+
+/* Encadré Barmaid */
+.timeline-item:nth-child(5) .timeline-description {
+    margin-left: 400px;
+    min-width: 330px;
+    max-width: 1000px;
+}
+
+/* CD31FFSS */
 .timeline-item:nth-child(6) .timeline-description {
     margin-left: 400px;
     min-width: 510px;
@@ -587,21 +613,46 @@ main {
 }
 
 
-/* Encadrés élargis pour CD31 FFSS et Éducatrice */
+/* Encadré Conciergerie */
 .timeline-item:nth-child(7) .timeline-description {
     min-width: 510px;
     max-width: 1000px;
+    margin-left: 60px;
 }
 
+/* Encadré Aux de vie */
+.timeline-item:nth-child(8) .timeline-description {
+    min-width: 700px;
+    max-width: 1000px;
+    margin-left: 60px;
+}
+
+/* Encadré Elevage */
+.timeline-item:nth-child(9) .timeline-description {
+    min-width: 700px;
+    max-width: 1000px;
+    margin-left: 60px;
+}
+
+/* Encadré Acaced */
+.timeline-item:nth-child(10) .timeline-description {
+    min-width: 740px;
+    max-width: 1000px;
+    margin-left: 60px;
+}
+
+/* Encadré Kern */
 .timeline-item:nth-child(11) .timeline-description {
-    margin-left: 400px;
-    min-width: 510px;
+    margin-right: 300px;
+    min-width: 830px;
     max-width: 1000px;
 }
 
+/* Encadré BTS - SIO*/ 
 .timeline-item:nth-child(12) .timeline-description {
-    min-width: 250px;
+    min-width: 450px;
     max-width: 500px;
+    margin-right: 270px;
 }
 
 
@@ -1111,9 +1162,37 @@ main {
 
 /* --- PORTFOLIO ------------------------------ */
 
+/* logos - tech */
+.fi-brands-java {
+    color: #00d4aa;
+}
+.fi-brands-wordpress {
+    color:#00d4aa;
+}
+
+.fi-brands-php {
+    color: #00d4aa;
+}
+
+.fi-brands-css3-alt {
+    color: #00d4aa;
+}
+
+.fi-brands-js {
+    color: #00d4aa;
+}
+
+.fi-brands-html5 {
+    color: #00d4aa;
+}
+
 #portfolio .container {
     display: flex;
     flex-direction: column;
+}
+
+.strong-projets {
+    color: #00d4aa;
 }
 
 .portfolio-grid {
@@ -1186,6 +1265,7 @@ main {
 
 .portfolio-links a {
     display: inline-block;
+    margin-top: 30px;
     padding: 12px 30px;
     background: rgba(0, 0, 0, 0.7);
     backdrop-filter: blur(10px);
