@@ -366,15 +366,15 @@ main {
 }
 
 .timeline-section-title.top {
-    margin-bottom: -50px;
+    margin-bottom: -90px;
+    margin-top: 50px;
 }
 
 .timeline-section-title.bottom {
-    margin-top: -150px;
+    margin-top: -180px;
     margin-bottom: 0;
 }
 
-/* Ajustement du container de la timeline */
 .timeline-container {
     position: relative;
     width: 100%;
@@ -382,35 +382,6 @@ main {
     margin: 0 auto;
 }
 
-/* Responsive pour la timeline wrapper */
-@media screen and (max-width: 768px) {
-    .timeline-wrapper {
-        padding: 40px 20px;
-    }
-    
-    .timeline-section-title {
-        font-size: 1.4em;
-    }
-}
-
-@keyframes pulse {
-    0%, 100% {
-        box-shadow: 0 0 15px rgba(0, 255, 200, 0.5), 0 0 30px rgba(0, 255, 200, 0.3);
-    }
-    50% {
-        box-shadow: 0 0 25px rgba(0, 255, 200, 0.8), 0 0 50px rgba(0, 255, 200, 0.5);
-    }
-}
-
-.timeline-item:hover .timeline-point {
-    transform: translate(-50%, -50%) scale(1.3);
-}
-
-.timeline-point:hover ~ .timeline-content .timeline-description {
-    max-height: 900px;
-    opacity: 1;
-    padding: 15px;
-}
 
 
 .timeline-content {
@@ -434,17 +405,15 @@ main {
     top: 50px;
 }
 
-/* Décalage hauteur Baccalauréat */
 .timeline-item:nth-child(2) .timeline-content.bottom {
     top: 50px;
 }
 
-/* Décalage hauteur Secourisme */
 .timeline-item:nth-child(4) .timeline-content.bottom {
     top: 100px;
 }
 
-/* Hauteurs alternées pour les expériences (top) */
+
 .timeline-item:nth-child(3) .timeline-content.top {
     bottom: 50px;
 }
@@ -538,10 +507,7 @@ main {
     white-space: nowrap;
 }
 
-.timeline-content:hover h4 {
-    color: #fff;
-    text-shadow: 0 0 15px rgba(0, 255, 200, 0.5);
-}
+
 
 .timeline-year {
     font-size: 0.85em;
@@ -656,19 +622,46 @@ main {
 }
 
 
+/* Guide timeline */
+#guide-timeline {
+    text-align: center;
+    margin-top: -40px;
+    margin-bottom: 30px;
+    font-style: italic;
+    font-size: x-small;
+}
 
-/* Encadré BTS - forcer alignement à droite */
+/* Afficher la description UNIQUEMENT au survol du point */
+.timeline-point:hover {
+    transform: translate(-50%, -50%) scale(1.3);
+}
+
+.timeline-point:hover ~ .timeline-content .timeline-description {
+    max-height: 900px;
+    opacity: 1;
+    padding: 15px;
+}
+
+/* Garder la description visible quand on survole le contenu après avoir survolé le point */
+.timeline-content:has(.timeline-description:hover) .timeline-description {
+    max-height: 900px;
+    opacity: 1;
+    padding: 15px;
+}
+
+/* Alternative si :has() ne fonctionne pas sur votre navigateur */
+.timeline-description:hover {
+    max-height: 900px;
+    opacity: 1;
+    padding: 15px;
+}
+
 .timeline-item:nth-child(13) .timeline-description {
     margin-left: auto;
     margin-right: 200px;
     max-width: 350px;
 }
 
-.timeline-content:hover .timeline-description {
-    max-height: 900px;
-    opacity: 1;
-    padding: 15px;
-}
 
 .timeline-description p {
     font-size: 0.9em;
@@ -1284,6 +1277,69 @@ main {
     box-shadow: 0 6px 24px rgba(0, 255, 200, 0.3);
 }
 
+
+
+/* TOGGLE BUTTON ----------------------------------------------------------------------------------------------------------- */
+
+.portfolio-hidden {
+    display: none;
+    opacity: 0;
+    animation: fadeOut 0.3s ease;
+}
+
+.portfolio-item:not(.portfolio-hidden) {
+    animation: fadeIn 0.5s ease;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    to {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+}
+
+.portfolio-toggle-btn {
+    display: block;
+    margin: 40px auto 0;
+    padding: 15px 40px;
+    background: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(10px);
+    border: 1px solid #00ffc8;
+    color: #00ffc8;
+    border-radius: 25px;
+    font-size: 1.2em;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-family: "SUSEMono", monospace;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
+}
+
+.portfolio-toggle-btn:hover {
+    transform: scale(1.05);
+    background: rgba(0, 255, 200, 0.1);
+    box-shadow: 0 6px 24px rgba(0, 255, 200, 0.3);
+}
+
+.portfolio-toggle-btn:active {
+    transform: scale(0.98);
+}
+
 /* --- CONTACT ------------------------------ */
 
 /* formulaire */
@@ -1506,3 +1562,5 @@ footer a:hover {
         width: calc(100% - 60px);
     }
 }
+
+        
