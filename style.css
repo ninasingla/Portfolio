@@ -784,6 +784,115 @@ main {
     margin-top: 60px;
 }
 
+/* --- FORMATION DESCRIPTIONS DÉTAILLÉES ------------------------------ */
+
+.formation-description-container {
+    background: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border: 1px solid rgba(0, 200, 150, 0.3);
+    border-radius: 20px;
+    padding: 40px;
+    margin-top: 80px;
+    opacity: 0;
+    transform: translateY(-20px);
+    transition: all 0.5s ease;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
+}
+
+.formation-description-container.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.formation-detail h3 {
+    font-size: 2em;
+    font-weight: 400;
+    color: #00ffc8;
+    margin-bottom: 30px;
+    text-align: center;
+    text-shadow: 0 0 20px rgba(0, 255, 200, 0.3);
+}
+
+.formation-detail h4 {
+    font-size: 1.4em;
+    font-weight: 400;
+    color: #00ffc8;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+.formation-detail ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+.formation-detail ul li {
+    margin: 10px 0;
+    padding-left: 25px;
+    position: relative;
+    color: #e0e0e0;
+    line-height: 1.6;
+    font-size: 1.05em;
+}
+
+.formation-detail ul li:before {
+    content: '▸';
+    position: absolute;
+    left: 0;
+    color: #00d4aa;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.close-formation-btn {
+    display: block;
+    margin: 40px auto 0;
+    padding: 15px 40px;
+    background: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(10px);
+    border: 1px solid #00ffc8;
+    color: #00ffc8;
+    border-radius: 25px;
+    font-size: 1.2em;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-family: "SUSEMono", monospace;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
+}
+
+.close-formation-btn:hover {
+    transform: scale(1.05);
+    background: rgba(0, 255, 200, 0.1);
+    box-shadow: 0 6px 24px rgba(0, 255, 200, 0.3);
+}
+
+.close-formation-btn:active {
+    transform: scale(0.98);
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+    .formation-description-container {
+        padding: 25px;
+        margin-top: 40px;
+    }
+    
+    .formation-detail h3 {
+        font-size: 1.5em;
+    }
+    
+    .formation-detail h4 {
+        font-size: 1.2em;
+    }
+    
+    .formation-detail ul li {
+        font-size: 0.95em;
+    }
+}
+
 /* support */
 .formation-card {
     position: relative;

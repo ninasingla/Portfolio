@@ -56,3 +56,56 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 });
+
+// Gestion des boutons "En savoir plus" pour la formation
+document.addEventListener('DOMContentLoaded', function() {
+    const formationLinks = document.querySelectorAll('.formation-card .timeline-link');
+    const detailsContainer = document.getElementById('formation-details');
+    const allDetails = document.querySelectorAll('.formation-detail');
+    
+    formationLinks.forEach(link => {
+        link.addEventListener('click', function(e) {
+            e.preventDefault();
+            
+            const formationType = this.getAttribute('data-formation');
+            const targetDetail = document.getElementById(`detail-${formationType}`);
+            
+            // Masquer tous les détails
+            allDetails.forEach(detail => {
+                detail.style.display = 'none';
+            });
+            
+            // Afficher le conteneur et le détail correspondant
+            detailsContainer.style.display = 'block';
+            targetDetail.style.display = 'block';
+            
+            // Ajouter l'animation
+            setTimeout(() => {
+                detailsContainer.classList.add('active');
+            }, 10);
+            
+            // Scroll vers la description
+            setTimeout(() => {
+                detailsContainer.scrollIntoView({ 
+                    behavior: 'smooth', 
+                    block: 'start',
+                    inline: 'nearest'
+                });
+            }, 300);
+        });
+    });
+    
+    // Gestion des boutons "Fermer"
+    const closeButtons = document.querySelectorAll('.close-formation-btn');
+    closeButtons.forEach(btn => {
+        btn.addEventListener('click', function() {
+            detailsContainer.classList.remove('active');
+            setTimeout(() => {
+                detailsContainer.style.display = 'none';
+                allDetails.forEach(detail => {
+                    detail.style.display = 'none';
+                });
+            }, 300);
+        });
+    });
+});

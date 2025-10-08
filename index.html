@@ -281,78 +281,221 @@
             </section>
 
 <!-- MA FORMATION -->
-            <section id="formation">
-                <div class="container">
-                    <h2 class="titre-section">Ma formation</h2>
-                    <h3 class="titre-formation">BTS SIO - SLAM
-                        <span>Services Informatiques aux Organisations - Solutions Logicielles et Applications Métiers</span>
-                    </h3>
-                    
-                    <div class="formation-cards">
+<section id="formation">
+    <div class="container">
+        <h2 class="titre-section">Ma formation</h2>
+        <h3 class="titre-formation">BTS SIO - SLAM
+            <span>Services Informatiques aux Organisations - Solutions Logicielles et Applications Métiers</span>
+        </h3>
+        
+        <div class="formation-cards">
 <!-- support -->
-                        <div class="formation-card">
-                            <div class="card-face face1">
-                                <div class="content">
-                                    <h4>Support et mise à disposition de services informatiques</h4>
-                                </div>
-                            </div>
-                            <div class="card-face face2">
-                                <div class="content">
-                                    <ul>
-                                        <li>Gérer le patrimoine informatique</li>
-                                        <li>Répondre aux incidents et aux demandes d'assistance et d'évolution</li>
-                                        <li>Développer la présence en ligne de l'organisation</li>
-                                        <li>Travailler en mode projet</li>
-                                        <li>Mettre à disposition des utilisateurs un service informatique</li>
-                                        <li>Veille informationnelle</li>
-                                    </ul>
-                                    <a href="#" class="timeline-link">En savoir plus</a><!-- créer pop up -->
-                                </div>
-                            </div>
-                        </div>
-
-<!-- cyber -->
-                        <div class="formation-card">
-                            <div class="card-face face1">
-                                <div class="content">
-                                    <h4>Cybersécurité</h4>
-                                </div>
-                            </div>
-                            <div class="card-face face2">
-                                <div class="content">
-                                    <ul>
-                                        <li>Protéger les données à caractère personnel</li>
-                                        <li>Préserver l'identité numérique de l'organisation</li>
-                                        <li>Sécuriser les équipements et les usages des utilisateurs</li>
-                                        <li>Garantir la disponibilité, l'intégrité et la confidentialité des services informatiques et des données de l'organisation face à des cyberattaques</li>
-                                    </ul>
-                                     <a href="#" class="timeline-link">En savoir plus</a><!-- créer pop up -->
-                                </div>
-                            </div>
-                        </div>
-
-<!-- dev -->
-                        <div class="formation-card">
-                            <div class="card-face face1">
-                                <div class="content">
-                                    <h4>Conception et développement d'applications</h4>
-                                </div>
-                            </div>
-                            <div class="card-face face2">
-                                <div class="content">
-                                    <ul>
-                                        <li>Concevoir et développer une solution applicative</li>
-                                        <br><li>Assurer la maintenance corrective ou évolutive d'une solution applicative</li>
-                                        <br><li>Gérer les données</li>
-                                    </ul>
-                                     <a href="#" class="timeline-link">En savoir plus</a><!-- créer pop up -->
-                                </div>
-                            </div>
-                        </div>
+            <div class="formation-card">
+                <div class="card-face face1">
+                    <div class="content">
+                        <h4>Support et mise à disposition de services informatiques</h4>
                     </div>
                 </div>
-            </section>
+                <div class="card-face face2">
+                    <div class="content">
+                        <ul>
+                            <li>Gérer le patrimoine informatique</li>
+                            <li>Répondre aux incidents et aux demandes d'assistance et d'évolution</li>
+                            <li>Développer la présence en ligne de l'organisation</li>
+                            <li>Travailler en mode projet</li>
+                            <li>Mettre à disposition des utilisateurs un service informatique</li>
+                            <li>Veille informationnelle</li>
+                        </ul>
+                        <a href="#" class="timeline-link" data-formation="support">En savoir plus</a>
+                    </div>
+                </div>
+            </div>
 
+<!-- cyber -->
+            <div class="formation-card">
+                <div class="card-face face1">
+                    <div class="content">
+                        <h4>Cybersécurité</h4>
+                    </div>
+                </div>
+                <div class="card-face face2">
+                    <div class="content">
+                        <ul>
+                            <li>Protéger les données à caractère personnel</li>
+                            <li>Préserver l'identité numérique de l'organisation</li>
+                            <li>Sécuriser les équipements et les usages des utilisateurs</li>
+                            <li>Garantir la disponibilité, l'intégrité et la confidentialité des services informatiques et des données de l'organisation face à des cyberattaques</li>
+                            <li>Cybersécurisation d'une solution applicative et de son développement</li>
+                        </ul>
+                        <a href="#" class="timeline-link" data-formation="cyber">En savoir plus</a>
+                    </div>
+                </div>
+            </div>
+
+<!-- dev -->
+            <div class="formation-card">
+                <div class="card-face face1">
+                    <div class="content">
+                        <h4>Conception et développement d'applications</h4>
+                    </div>
+                </div>
+                <div class="card-face face2">
+                    <div class="content">
+                        <ul>
+                            <li>Concevoir et développer une solution applicative</li>
+                            <br><li>Assurer la maintenance corrective ou évolutive d'une solution applicative</li>
+                            <br><li>Gérer les données</li>
+                        </ul>
+                        <a href="#" class="timeline-link" data-formation="dev">En savoir plus</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+<!-- DESCRIPTIONS DÉTAILLÉES -->
+        <div id="formation-details" class="formation-description-container" style="display: none;">
+<!-- Support -->
+            <div class="formation-detail" id="detail-support" style="display: none;">
+                <h3>Support et mise à disposition des services informatiques</h3>
+                
+                <h4>Gestion du patrimoine informatique :</h4>
+                <ul>
+                    <li>Recensement et identification des ressources numériques</li>
+                    <li>Exploitation des référentiels, normes et standards adoptés par le prestataire informatique</li>
+                    <li>Mise en place et vérification des niveaux d'habilitation associés à un service</li>
+                    <li>Vérification des conditions de la continuité d'un service informatique</li>
+                    <li>Gestion des sauvegardes</li>
+                    <li>Vérification du respect des règles d'utilisation des ressources numériques</li>
+                </ul>
+                
+                <h4>Réponse aux incidents et aux demandes d'assistance et d'évolution :</h4>
+                <ul>
+                    <li>Collecte, suivi et orientation des demandes</li>
+                    <li>Traitement des demandes concernant les applicatifs, services réseau et système</li>
+                    <li>Traitement des demandes concernant les applications</li>
+                </ul>
+                
+                <h4>Développement de la présence en ligne de l'organisation :</h4>
+                <ul>
+                    <li>Participation à la valorisation de l'image de l'organisation sur les médias numériques en tenant compte du cadre juridique et des enjeux économiques</li>
+                    <li>Référencement des services en ligne de l'organisation et mesure de leur visibilité</li>
+                    <li>Participation à l'évolution d'un site Web exploitant les données de l'organisation</li>
+                </ul>
+                
+                <h4>Travail en mode projet :</h4>
+                <ul>
+                    <li>Analyse des objectifs et des modalités d'organisation d'un projet</li>
+                    <li>Planification des activités</li>
+                    <li>Évaluation des indicateurs de suivi d'un projet et analyse des écarts</li>
+                </ul>
+                
+                <h4>Mise à disposition des utilisateurs d'un service informatique :</h4>
+                <ul>
+                    <li>Test d'intégration et d'acceptation d'un service</li>
+                    <li>Déploiement d'un service</li>
+                    <li>Accompagnement des utilisateurs dans la mise en place d'un service</li>
+                </ul>
+                
+                <h4>Organisation de son développement professionnel :</h4>
+                <ul>
+                    <li>Mise en place de son environnement d'apprentissage personnel</li>
+                    <li>Mise en œuvre d'outils et de stratégie veille informationnelle</li>
+                    <li>Gestion de son identité professionnelle</li>
+                    <li>Développement de son projet professionnel</li>
+                </ul>
+                
+                <button class="close-formation-btn">Fermer</button>
+            </div>
+
+<!-- Cybersécurité -->
+            <div class="formation-detail" id="detail-cyber" style="display: none;">
+                <h3>Cybersécurité</h3>
+                
+                <h4>Protection des données à caractère personnel :</h4>
+                <ul>
+                    <li>Recensement des traitements sur les données à caractère personnel au sein de l'organisation</li>
+                    <li>Identification des risques liés à la collecte, au traitement, au stockage et à la diffusion des données à caractère personnel</li>
+                    <li>Application de la réglementation en matière de collecte, de traitement et de conservation des données à caractère personnel</li>
+                    <li>Sensibilisation des utilisateurs à la protection des données à caractère personnel</li>
+                </ul>
+                
+                <h4>Préservation de l'identité numérique de l'organisation :</h4>
+                <ul>
+                    <li>Protection de l'identité numérique d'une organisation</li>
+                    <li>Déploiement de moyens appropriés de preuve électronique</li>
+                </ul>
+                
+                <h4>Sécurisation des équipements et des usages des utilisateurs :</h4>
+                <ul>
+                    <li>Information des utilisateurs sur les risques associés à l'utilisation d'une ressource numérique et promotion des bons usages à adopter</li>
+                    <li>Identification des menaces et mise en œuvre des défenses appropriées</li>
+                    <li>Gestion des accès et des privilèges appropriés</li>
+                    <li>Vérification de l'efficacité de la protection</li>
+                </ul>
+                
+                <h4>Garantie de la disponibilité, de l'intégrité et de la confidentialité :</h4>
+                <ul>
+                    <li>Caractérisation des risques liés à l'utilisation malveillante d'un service informatique</li>
+                    <li>Recensement des conséquences d'une perte de disponibilité, d'intégrité ou de confidentialité</li>
+                    <li>Identification des obligations légales qui s'imposent en matière d'archivage et de protection des données de l'organisation</li>
+                    <li>Organisation de la collecte et de la conservation de la preuve électronique</li>
+                    <li>Application des procédures garantissant le respect des obligations légales</li>
+                </ul>
+                
+                <h4>Cybersécurisation d'une solution applicative et de son développement :</h4>
+                <ul>
+                    <li>Vérification des éléments contribuant à la qualité d'un développement informatique</li>
+                    <li>Prise en compte de la sécurité dans un projet de développement d'une solution applicative</li>
+                    <li>Mise en œuvre et vérification de la conformité d'une solution applicative et de son développement à un référentiel, une norme ou un standard de sécurité</li>
+                    <li>Prévention des attaques</li>
+                    <li>Analyse des connexions (logs)</li>
+                    <li>Analyse d'incidents de sécurité, proposition et mise en œuvre de contre-mesures</li>
+                </ul>
+                
+                <button class="close-formation-btn">Fermer</button>
+            </div>
+
+<!-- Développement -->
+            <div class="formation-detail" id="detail-dev" style="display: none;">
+                <h3>Conception et développement d'applications</h3>
+                
+                <h4>Conception et développement d'une solution applicative :</h4>
+                <ul>
+                    <li>Analyse d'un besoin exprimé et de son contexte juridique</li>
+                    <li>Participation à la conception de l'architecture d'une solution applicative</li>
+                    <li>Modélisation d'une solution applicative</li>
+                    <li>Exploitation des ressources du cadre applicatif (framework)</li>
+                    <li>Identification, développement, utilisation ou adaptation de composants logiciels</li>
+                    <li>Exploitation des technologies Web et mobile pour mettre en œuvre les échanges entre applications</li>
+                    <li>Utilisation de composants d'accès aux données</li>
+                    <li>Intégration continue des versions d'une solution applicative</li>
+                    <li>Réalisation des tests nécessaires à la validation ou à la mise en production d'éléments adaptés ou développés</li>
+                    <li>Rédaction des documentations technique et d'utilisation d'une solution applicative</li>
+                    <li>Exploitation des fonctionnalités d'un environnement de développement et de tests</li>
+                </ul>
+                
+                <h4>Maintenance corrective ou évolutive d'une solution applicative :</h4>
+                <ul>
+                    <li>Évaluation de la qualité d'une solution applicative</li>
+                    <li>Recueil, analyse et mise à jour d'informations sur une version d'une solution applicative</li>
+                    <li>Analyse et correction d'un dysfonctionnement</li>
+                    <li>Mise à jour de documentations technique et d'utilisation d'une solution applicative</li>
+                    <li>Élaboration et réalisation de tests des éléments mis à jour</li>
+                </ul>
+                
+                <h4>Gestion des données :</h4>
+                <ul>
+                    <li>Exploitation de données à l'aide d'un langage de requêtes</li>
+                    <li>Développement de fonctionnalités applicatives au sein d'un SGBD</li>
+                    <li>Conception ou adaptation d'une base de données</li>
+                    <li>Administration et déploiement d'une base de données</li>
+                </ul>
+                
+                <button class="close-formation-btn">Fermer</button>
+            </div>
+        </div>
+    </div>
+</section>
 
 
 <!-- MES COMPÉTENCES -->
