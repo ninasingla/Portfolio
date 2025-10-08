@@ -36,7 +36,7 @@ Lien vers le site : https://ninasingla.fr
 ```
 ninasingla.fr/
 ├── index.html
-├── attributions.html
+│ └── attributions.html
 ├── style.css
 ├── script.js
 ├── font/
